@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Implementation roadmap</title>
+  </head>
+  <body>
+    <main class="roadmap-container">
+      <div class="roadmap">
+        <h1>Implementation roadmap</h1>
+        <section class="roadmap__part planning">
+          <h2>Планирование трансформации</h2>
+          <ul class="planning" role="list">
+            <li>Обучаем топ-менеджмент</li>
+            <li>Определяем, от чего формируем OKR</li>
+            <li>Определяем участников для выработки годовых целей</li>
+            <!-- SVG дуга -->
+            <div class="curve">
+              <svg
+                viewBox="-350 0 715 485"
+                width="350"
+                height="420"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M-180,538 A112,80 0 1 0 -180,-65"
+                  fill="none"
+                  stroke="#3e92d0"
+                  stroke-width="240"
+                />
+
+                <!-- Вход (левый конец дуги) -->
+                <polygon points="-195,-195 -15,-63 -245,105" fill="#fff" />
+
+                <!-- Выход (правый конец дуги) -->
+                <polygon points="-178,417 -347,536 -178,659" fill="#3e92d0" />
+
+                <!-- <polygon points="00,420 60,60 0,0" fill="fff" /> -->
+              </svg>
+              <div class="description">
+                Формируем годовые цели и черновики целей на квартал
+              </div>
+            </div>
+          </ul>
+        </section>
+
+        <section class="roadmap__part">
+          <h2>Запуск изменений</h2>
+          <ul class="start" role="list">
+            <li>Определяем контур пилотирования OKR</li>
+            <li>Обучаем пилотный контур</li>
+            <div class="curve curve-mirrored">
+              <svg
+                width="350"
+                height="420"
+                viewBox="-150 0 700 470"
+                preserveAspectRatio="xMidYMid meet"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <!-- продлить viewbox на +100-150 чтобы въебать треугол -->
+                <path
+                  d="M105,525 A105,95 0 1 0 105,-65"
+                  fill="none"
+                  stroke="#3e92d0"
+                  stroke-width="240"
+                />
+
+                <polygon points="104,-185 280,-65 104,55" fill="#fff" />
+
+                <!-- Выход (правый конец дуги) -->
+                <polygon points="107,405 -55,524 107,646" fill="#3e92d0" />
+              </svg>
+              <div class="description">
+                Формируем и согласуем квартальные OKR
+              </div>
+            </div>
+          </ul>
+        </section>
+        <section class="roadmap__part end">
+          <div>
+            <h2>Поддержка</h2>
+            <ul class="support" role="list">
+              <li>Запускаем цикл отслеживания динамики работы по OKR</li>
+              <li>Инспекция и адаптация работы над OKR</li>
+            </ul>
+          </div>
+          <div>
+            <h2>Масштабирование</h2>
+            <ul class="scale" role="list">
+              <li>Масштабирование OKR подхода</li>
+            </ul>
+          </div>
+        </section>
+      </div>
+    </main>
+  </body>
+</html>

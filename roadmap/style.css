@@ -1,0 +1,387 @@
+:root {
+  --block-margin-value: -70px;
+
+  --planning-color: #fc3c39;
+  --start-color: #3e92d0;
+  --support-color: #853692;
+  --scale-color: #3fb656;
+}
+
+/* CSS RESET */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+/* STYLES */
+
+body {
+  overflow-x: hidden;
+}
+
+h1 {
+  color: #3f90cf;
+}
+
+h2 {
+  color: #000;
+}
+
+h1,
+h2 {
+  text-align: center;
+}
+
+ul {
+  display: flex;
+  height: 120px;
+  padding: 0;
+}
+
+ul.start {
+  flex-direction: row-reverse;
+}
+
+ul.start li {
+  clip-path: polygon(100% 0%, 75% 50%, 100% 100%, 25% 100%, 0% 50%, 25% 0%);
+}
+
+ul li {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+  /* padding: 8px 32px 8px 40px; */
+  min-width: 320px;
+  max-width: min-content;
+  text-align: center;
+  vertical-align: middle;
+}
+
+ul.planning li {
+  background-color: var(--planning-color);
+  padding: 8px 60px 8px 80px;
+}
+
+ul.support li {
+  padding: 8px 60px 8px 80px;
+}
+
+ul.scale li {
+  padding: 8px 40px 8px 80px;
+}
+
+ul.planning li:first-of-type {
+  clip-path: polygon(0% 0%, 75% 0%, 100% 50%, 75% 100%, 0% 100%);
+  padding: 8px 70px 8px 40px;
+}
+
+ul.planning li:not(:first-of-type) {
+  clip-path: polygon(75% 0%, 100% 50%, 75% 100%, 0% 100%, 25% 50%, 0% 0%);
+
+  margin-left: var(--block-margin-value);
+}
+
+ul.start li:not(:first-of-type) {
+  margin-right: var(--block-margin-value);
+}
+
+ul.support li {
+  margin-right: var(--block-margin-value);
+}
+
+ul.scale li:last-of-type {
+  clip-path: polygon(100% 0%, 100% 50%, 100% 100%, 0% 100%, 25% 50%, 0% 0%);
+}
+
+ul.start li {
+  background-color: var(--start-color);
+  padding: 8px 90px 8px 60px;
+}
+
+ul.support li {
+  background-color: var(--support-color);
+}
+
+ul.scale li {
+  background-color: var(--scale-color);
+}
+
+.roadmap {
+  display: flex;
+  max-width: 100%;
+  justify-self: center;
+  flex-direction: column;
+  min-width: 1050px;
+  gap: 6em;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.roadmap ul {
+  color: #fff;
+}
+
+.roadmap__part.end {
+  display: flex;
+  justify-content: end;
+}
+
+/* TRANSITIONS */
+
+.planning {
+  position: relative;
+}
+
+.curve {
+  position: absolute;
+  right: 0;
+  width: 350px;
+  height: 420px;
+  z-index: -1;
+}
+
+.curve svg {
+  position: relative;
+}
+
+.start {
+  position: relative;
+  margin-right: 280px;
+}
+
+ul.start li {
+  min-width: 345px;
+}
+
+ul.planning li {
+  min-width: 330px;
+}
+
+ul.support li {
+  min-width: 318px;
+}
+
+svg {
+  height: 100%;
+}
+
+svg:not(:root) {
+  display: inline-block;
+}
+
+.description {
+  position: absolute;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 8px;
+  top: 35%;
+  left: 45%;
+  width: 200px;
+  height: 120px;
+  background-color: var(--start-color);
+  border-top: 8px solid #fff;
+  border-bottom: 8px solid #fff;
+}
+
+.curve-mirrored {
+  right: 0;
+  left: 0px;
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1);
+}
+
+.curve-mirrored .description {
+  transform: scaleX(-1);
+  -webkit-transform: scaleX(-1); /* Обратное отражение для текста */
+}
+
+/* АДАПТИВ */
+
+body,
+html {
+  overflow: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+.roadmap-container {
+  display: flex;
+  justify-self: center;
+  align-items: center;
+  max-width: 100%;
+  padding: 20px;
+  overflow: hidden;
+  max-width: 1200px;
+  transform: scale(1);
+  transition: transform 0.3s ease-in-out;
+}
+
+svg,
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+.roadmap {
+  width: 100%; /* Дорожная карта растягивается на всю ширину контейнера */
+  max-width: 1000px; /* Максимальная ширина */
+}
+
+@media (max-width: 1024px) {
+  .roadmap {
+    transform: scale(0.9); /* Уменьшаем дорожную карту */
+  }
+}
+
+@media (max-width: 943px) {
+  .roadmap {
+    transform: scale(0.85); /* Уменьшаем дорожную карту */
+  }
+}
+
+@media (max-width: 865px) {
+  .roadmap {
+    transform: scale(0.75); /* Уменьшаем дорожную карту */
+  }
+}
+
+@media (max-width: 768px) {
+  .roadmap {
+    transform: scale(0.7);
+  }
+}
+
+@media (max-width: 739px) {
+  .roadmap {
+    transform: scale(0.65);
+  }
+}
+
+@media (max-width: 655px) {
+  .roadmap {
+    transform: scale(0.5);
+  }
+}
+
+@media (max-width: 530px) {
+  .roadmap {
+    transform: scale(0.45);
+  }
+}
+
+@media (max-width: 478px) {
+  .roadmap {
+    transform: scale(0.4);
+  }
+}
+
+@media (max-width: 375px) {
+  .roadmap {
+    transform: scale(0.35);
+  }
+}
+
+@media (max-width: 320px) {
+  .roadmap {
+    transform: scale(0.3);
+  }
+}

@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <script src="./script.js" defer></script>
+    <title>Таблица автомобилей</title>
+  </head>
+  <body>
+    <h1>Список автомобилей</h1>
+    <div class="container">
+      <form action="#" onsubmit="moreThanX(event)" class="choose" method="get">
+        <div>
+          <label for="numberVar">X = </label>
+          <input type="number" name="numberVar" id="numberVar" />
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="col"
+            id="year"
+            value="year"
+            attr-index="3"
+          />
+          <label for="year">для столбца "Год"</label>
+        </div>
+        <div>
+          <input
+            type="radio"
+            name="col"
+            id="price"
+            value="price"
+            attr-index="5"
+          />
+          <label for="price">для столбца "Цена ($)"</label>
+        </div>
+        <div class="btns">
+          <button type="submit">Показать</button>
+          <button onclick="resetFilter()" type="reset">Сброс</button>
+        </div>
+      </form>
+      <div class="theaders">
+        <fieldset>
+          <legend>Выберите, что Вы хотите скрыть:</legend>
+
+          <div>
+            <input
+              onclick="hideColumn(this)"
+              type="checkbox"
+              name="model"
+              id="model"
+              attr-index="2"
+            /><label for="model">Модель</label>
+          </div>
+          <div>
+            <input
+              onclick="hideColumn(this)"
+              type="checkbox"
+              name="carBody"
+              id="carBody"
+              attr-index="4"
+            /><label for="carBody">Кузов</label>
+          </div>
+          <div>
+            <input
+              onclick="hideColumn(this)"
+              type="checkbox"
+              name="carAvailability"
+              id="carAvailability"
+              attr-index="6"
+            /><label for="carAvailability">В продаже</label>
+          </div>
+        </fieldset>
+      </div>
+    </div>
+    <table class="sheet" id="carTable">
+      <thead>
+        <tr>
+          <th onclick="sortColumn(this)" attr-index="1">
+            Марка <span class="sort"></span>
+          </th>
+          <th onclick="sortColumn(this)" attr-index="2">
+            Модель <span class="sort"></span>
+          </th>
+          <th onclick="sortColumn(this)" attr-index="3">
+            Год <span class="sort"></span>
+          </th>
+          <th onclick="sortColumn(this)" attr-index="4">
+            Кузов <span class="sort"></span>
+          </th>
+          <th onclick="sortColumn(this)" attr-index="5">
+            Цена ($) <span class="sort"></span>
+          </th>
+          <th onclick="sortColumn(this)" attr-index="6">
+            В продаже <span class="sort"></span>
+          </th>
+        </tr>
+      </thead>
+      <tbody></tbody>
+    </table>
+  </body>
+</html>

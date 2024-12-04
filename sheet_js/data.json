@@ -1,0 +1,234 @@
+[
+  {
+    "brand": "Toyota",
+    "model": "Camry",
+    "year": 2021,
+    "carBody": "Седан",
+    "price": 30000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "BMW",
+    "model": "X5",
+    "year": 2020,
+    "carBody": "Кроссовер",
+    "price": 50000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Audi",
+    "model": "A4",
+    "year": 2022,
+    "carBody": "Седан",
+    "price": 40000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Mercedes",
+    "model": "GLA",
+    "year": 2019,
+    "carBody": "Кроссовер",
+    "price": 45000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 2021,
+    "carBody": "Купе",
+    "price": 55000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Chevrolet",
+    "model": "Malibu",
+    "year": 2018,
+    "carBody": "Седан",
+    "price": 20000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Tucson",
+    "year": 2022,
+    "carBody": "Кроссовер",
+    "price": 32000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Kia",
+    "model": "Sportage",
+    "year": 2020,
+    "carBody": "Кроссовер",
+    "price": 30000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Passat",
+    "year": 2019,
+    "carBody": "Седан",
+    "price": 25000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Honda",
+    "model": "Accord",
+    "year": 2021,
+    "carBody": "Седан",
+    "price": 28000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Nissan",
+    "model": "Altima",
+    "year": 2019,
+    "carBody": "Седан",
+    "price": 24000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Mazda",
+    "model": "CX-5",
+    "year": 2022,
+    "carBody": "Кроссовер",
+    "price": 35000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Jeep",
+    "model": "Wrangler",
+    "year": 2020,
+    "carBody": "Внедорожник",
+    "price": 45000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Tesla",
+    "model": "Model 3",
+    "year": 2021,
+    "carBody": "Седан",
+    "price": 60000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Subaru",
+    "model": "Outback",
+    "year": 2019,
+    "carBody": "Универсал",
+    "price": 32000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Volvo",
+    "model": "XC60",
+    "year": 2021,
+    "carBody": "Кроссовер",
+    "price": 48000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Porsche",
+    "model": "Cayenne",
+    "year": 2020,
+    "carBody": "Кроссовер",
+    "price": 70000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Land Rover",
+    "model": "Defender",
+    "year": 2022,
+    "carBody": "Внедорожник",
+    "price": 80000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Lexus",
+    "model": "RX",
+    "year": 2021,
+    "carBody": "Кроссовер",
+    "price": 50000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Chevrolet",
+    "model": "Impala",
+    "year": 2018,
+    "carBody": "Седан",
+    "price": 21000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Ford",
+    "model": "Explorer",
+    "year": 2021,
+    "carBody": "Внедорожник",
+    "price": 43000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "BMW",
+    "model": "3 Series",
+    "year": 2020,
+    "carBody": "Седан",
+    "price": 45000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Honda",
+    "model": "CR-V",
+    "year": 2022,
+    "carBody": "Кроссовер",
+    "price": 36000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Mazda",
+    "model": "6",
+    "year": 2019,
+    "carBody": "Седан",
+    "price": 27000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Audi",
+    "model": "Q7",
+    "year": 2021,
+    "carBody": "Кроссовер",
+    "price": 68000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Mercedes",
+    "model": "S-Class",
+    "year": 2022,
+    "carBody": "Седан",
+    "price": 110000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Volkswagen",
+    "model": "Golf",
+    "year": 2018,
+    "carBody": "Хэтчбек",
+    "price": 20000,
+    "carAvailability": "Нет"
+  },
+  {
+    "brand": "Hyundai",
+    "model": "Elantra",
+    "year": 2021,
+    "carBody": "Седан",
+    "price": 22000,
+    "carAvailability": "Да"
+  },
+  {
+    "brand": "Kia",
+    "model": "Rio",
+    "year": 2020,
+    "carBody": "Хэтчбек",
+    "price": 18000,
+    "carAvailability": "Да"
+  }
+]
